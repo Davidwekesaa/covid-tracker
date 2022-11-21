@@ -1,38 +1,129 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tcontainer{
+  width: 100% !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Table {
+  width: 50%;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ceses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ceses > h6 {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.new {
+  color: rgb(69, 4, 248);
+}
+.active {
+  color: hotpink;
+}
+.critical {
+  color: red;
+}
+.recovered {
+  color: rgb(17, 212, 17);
+}
+.total {
+  color: lightseagreen;
+}
+.sp {
+  width: 50%;
+}
+.Table  {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 15px;
+}
+
+.input-cintainer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  width: 50%;
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.first-last-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.field-others {
+  width: 100%;
+}
+.field {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 0.5px solid #616f83;
+  background-color: #283a54;
+  font-size: 1em;
   color: white;
 }
+.tableRow{
+  height: 10px !important;
+  padding-top: 10px !important;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.tableRow:hover{
+  cursor: pointer !important;  
+  background-color: #283a54 !important;
+  color: white !important;
+  
+}
+.cth{
+  width: 600px !important;
+  height: 290px !important;
+  font-size: 700px !important;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.barchats{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.chatsss{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.spin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+  
+}
+@media (max-width: 800px) {
+  .Table {
+    width: 100%;
+    
   }
 }
